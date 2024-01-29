@@ -18,7 +18,7 @@ class ClientTest(unittest.TestCase):
         self.assertEqual(getRatio(price_a=prices[stock_a], price_b=prices[stock_b]),
                          round(float(((q_list[0]['top_bid']['price'] + q_list[0]['top_ask']['price']) / 2) /
                                      ((q_list[1]['top_bid']['price'] + q_list[1]['top_ask']['price']) / 2)), 6))
-        # Below is a test where the function getRation has a different result which will give error and fail the test.
+        # Below is a test where the function getRatio has a different result which will give error and fail the test.
         # self.assertEqual(getRatio(price_a=prices[stock_a], price_b=prices[stock_b]),
         #                  float(((q_list[0]['top_bid']['price'] + q_list[0]['top_ask']['price']) / 2) /
         #                        ((q_list[1]['top_bid']['price'] + q_list[1]['top_ask']['price']) / 2)))
